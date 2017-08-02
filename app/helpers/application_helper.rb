@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+  
+  def copyright_generator
+    IngramViewTool::Renderer.copyright 'Keegan Ingram', 'All rights reserved'
+  end
 end
